@@ -57,7 +57,7 @@ const ColorList = ({ colors, updateColors }) => {
       <p>colors</p>
       <ul>
         {colors.map(color => (
-          <li key={color.color} onClick={() => {
+          <li key={color.color} data-testid='colors' onClick={() => {
             editColor(color);
             setId(color.id)
           }}>
